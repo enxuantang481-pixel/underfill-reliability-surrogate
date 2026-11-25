@@ -5,6 +5,10 @@ Surrogate models for solder-joint reliability in electronic packaging, in two pa
 1. **`cvae_lstm/`**: a CVAE-LSTM model that predicts microstructure evolution in micro-bumps, replacing a slow phase-field solver.
 2. **`underfill_screening/`**: a Gaussian-process screening workflow around COMSOL that picks an underfill material for a BGA package under automotive thermal cycling (−40 to 125 °C). This was our finalist entry in the IEEE ESTC 2026 student competition.
 
+## Competition background
+
+The IEEE ESTC 2026 Student Competition ("Predictive Modeling and Design Optimization for Advanced Electronic Packaging") posed an automotive reliability case: model a BGA package on a PCB under −40 to 125 °C thermal cycling, find the critical solder joints, and identify an underfill choice that improves reliability by at least 2×, without changing the geometry or the solder. This entry was selected as one of 7 finalists worldwide and presented at the 11th ESTC conference in Helsinki, September 2026.
+
 ## Results
 
 **CVAE-LSTM surrogate**
