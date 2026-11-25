@@ -1,0 +1,87 @@
+{
+  "interpretation": "(0,0) is the official outer corner joint at DNP 17.6777 mm; the other three are its first inward neighbors.",
+  "results": {
+    "reference_A": {
+      "model": "E:\\COMSEL\\official_compliant_redesign_rms\\reference_A\\anand_c2\\coarse\\official_corner_reference_A_anand_coarse_dt15_batchsolved.mph",
+      "joints": [
+        {
+          "joint": "(0,0)",
+          "dnp_mm": 17.67766952966369,
+          "cycle_1_delta_evpe": 0.017919592124899058,
+          "cycle_2_delta_evpe": 0.016614707242278755
+        },
+        {
+          "joint": "(0,1)",
+          "dnp_mm": 16.98528775146303,
+          "cycle_1_delta_evpe": 0.017549019185452285,
+          "cycle_2_delta_evpe": 0.016251362479845755
+        },
+        {
+          "joint": "(1,0)",
+          "dnp_mm": 16.98528775146303,
+          "cycle_1_delta_evpe": 0.01754463388728805,
+          "cycle_2_delta_evpe": 0.016249247953630624
+        },
+        {
+          "joint": "(1,1)",
+          "dnp_mm": 16.263455967290593,
+          "cycle_1_delta_evpe": 0.017117223147122555,
+          "cycle_2_delta_evpe": 0.015828808330853015
+        }
+      ],
+      "cycle_1_rank": [
+        "(0,0)",
+        "(0,1)",
+        "(1,0)",
+        "(1,1)"
+      ],
+      "cycle_2_rank": [
+        "(0,0)",
+        "(0,1)",
+        "(1,0)",
+        "(1,1)"
+      ]
+    },
+    "nominal_B": {
+      "model": "E:\\COMSEL\\official_compliant_redesign_rms\\nominal_B\\anand_c2\\coarse\\official_corner_nominal_B_anand_coarse_dt15_batchsolved.mph",
+      "joints": [
+        {
+          "joint": "(0,0)",
+          "dnp_mm": 17.67766952966369,
+          "cycle_1_delta_evpe": 0.005480179673800172,
+          "cycle_2_delta_evpe": 0.004389264977990769
+        },
+        {
+          "joint": "(0,1)",
+          "dnp_mm": 16.98528775146303,
+          "cycle_1_delta_evpe": 0.005348859353303361,
+          "cycle_2_delta_evpe": 0.004241032520444004
+        },
+        {
+          "joint": "(1,0)",
+          "dnp_mm": 16.98528775146303,
+          "cycle_1_delta_evpe": 0.005350504147710971,
+          "cycle_2_delta_evpe": 0.004245730917873108
+        },
+        {
+          "joint": "(1,1)",
+          "dnp_mm": 16.263455967290593,
+          "cycle_1_delta_evpe": 0.005195141234727904,
+          "cycle_2_delta_evpe": 0.004070809508320966
+        }
+      ],
+      "cycle_1_rank": [
+        "(0,0)",
+        "(1,0)",
+        "(0,1)",
+        "(1,1)"
+      ],
+      "cycle_2_rank": [
+        "(0,0)",
+        "(1,0)",
+        "(0,1)",
+        "(1,1)"
+      ]
+    }
+  }
+}

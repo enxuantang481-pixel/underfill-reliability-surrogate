@@ -1,0 +1,44 @@
+{
+  "metric": "cycle-1 increment of corner-ball volume-average solid.evpe",
+  "results": {
+    "coarse": {
+      "reference_A": {
+        "field_expression": "solid.evpe",
+        "cycle_1_delta_evpe": 0.017812353835975143,
+        "model": "E:\\COMSEL\\official_compliant_redesign_ortho\\reference_A\\anand_c2\\coarse\\reference_A_anand_c2_coarse_ortho_dt15_solved.mph"
+      },
+      "nominal_B": {
+        "field_expression": "solid.evpe",
+        "cycle_1_delta_evpe": 0.005268440472666761,
+        "model": "E:\\COMSEL\\official_compliant_redesign_ortho\\nominal_B\\anand_c2\\coarse\\nominal_B_anand_c2_coarse_ortho_dt15_solved.mph"
+      },
+      "comparison": {
+        "damage_ratio_B_to_A": 0.29577452374801977,
+        "evpe_reduction_percent": 70.42254762519802,
+        "inverse_damage_factor": 3.3809537999693764
+      }
+    },
+    "medium": {
+      "reference_A": {
+        "field_expression": "solid.evpe",
+        "cycle_1_delta_evpe": 0.017906032381431635,
+        "model": "E:\\COMSEL\\official_compliant_redesign_ortho\\reference_A\\anand_c1\\medium\\reference_A_anand_c1_medium_ortho_dt15_ooc_solved.mph"
+      },
+      "nominal_B": {
+        "field_expression": "solid.evpe",
+        "cycle_1_delta_evpe": 0.005279811166940903,
+        "model": "E:\\COMSEL\\official_compliant_redesign_ortho\\nominal_B\\anand_c1\\medium\\nominal_B_anand_c1_medium_ortho_dt15_ooc_solved.mph"
+      },
+      "comparison": {
+        "damage_ratio_B_to_A": 0.2948621478209774,
+        "evpe_reduction_percent": 70.51378521790225,
+        "inverse_damage_factor": 3.3914153016586583
+      }
+    }
+  },
+  "mesh_change_percent": {
+    "reference_A": 0.5259189566922506,
+    "nominal_B": 0.2158265682820959,
+    "inverse_damage_factor": 0.3094245679836405
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "metric": "cycle-wise increment of corner-ball volume-average solid.evpe",
+  "results": {
+    "reference_A": {
+      "field_expression": "solid.evpe",
+      "cycle_1_delta_evpe": 0.017919592124899058,
+      "cycle_2_delta_evpe": 0.016614707242278755,
+      "cycle_2_to_cycle_1": 0.9271811058239892,
+      "model": "E:\\COMSEL\\official_compliant_redesign_rms\\reference_A\\anand_c2\\coarse\\official_corner_reference_A_anand_coarse_dt15_batchsolved.mph"
+    },
+    "nominal_B": {
+      "field_expression": "solid.evpe",
+      "cycle_1_delta_evpe": 0.005480179673800172,
+      "cycle_2_delta_evpe": 0.004389264977990769,
+      "cycle_2_to_cycle_1": 0.8009345020155297,
+      "model": "E:\\COMSEL\\official_compliant_redesign_rms\\nominal_B\\anand_c2\\coarse\\official_corner_nominal_B_anand_coarse_dt15_batchsolved.mph"
+    },
+    "cycle_1_delta_evpe_comparison": {
+      "damage_ratio_B_to_A": 0.3058205586155908,
+      "evpe_reduction_percent": 69.41794413844092,
+      "inverse_damage_factor": 3.2698913523893474
+    },
+    "cycle_2_delta_evpe_comparison": {
+      "damage_ratio_B_to_A": 0.2641794955508809,
+      "evpe_reduction_percent": 73.5820504449119,
+      "inverse_damage_factor": 3.785305130947986
+    }
+  }
+}

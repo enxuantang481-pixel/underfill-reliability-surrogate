@@ -1,0 +1,34 @@
+{
+  "metric": "cycle-wise increment of corner-ball volume-average solid.evpe",
+  "fr4_model": "competition orthotropic E, Poisson ratios and CTE; shear moduli derived from E and nu",
+  "results": {
+    "reference_A": {
+      "field_expression": "solid.evpe",
+      "cycle_1_delta_evpe": 0.017812353835975143,
+      "cycle_2_delta_evpe": 0.016198304766593053,
+      "cycle_2_to_cycle_1": 0.9093859753604132,
+      "final_time_s": 7230.0,
+      "model": "E:\\COMSEL\\official_compliant_redesign_ortho\\reference_A\\anand_c2\\coarse\\reference_A_anand_c2_coarse_ortho_dt15_solved.mph"
+    },
+    "nominal_B": {
+      "field_expression": "solid.evpe",
+      "cycle_1_delta_evpe": 0.005268440472666761,
+      "cycle_2_delta_evpe": 0.0038614320450826153,
+      "cycle_2_to_cycle_1": 0.7329364477241685,
+      "final_time_s": 7230.0,
+      "model": "E:\\COMSEL\\official_compliant_redesign_ortho\\nominal_B\\anand_c2\\coarse\\nominal_B_anand_c2_coarse_ortho_dt15_solved.mph"
+    }
+  },
+  "comparisons": {
+    "cycle_1_delta_evpe": {
+      "damage_ratio_B_to_A": 0.29577452374801977,
+      "evpe_reduction_percent": 70.42254762519802,
+      "inverse_damage_factor": 3.3809537999693764
+    },
+    "cycle_2_delta_evpe": {
+      "damage_ratio_B_to_A": 0.23838494834634355,
+      "evpe_reduction_percent": 76.16150516536564,
+      "inverse_damage_factor": 4.194895721969513
+    }
+  }
+}

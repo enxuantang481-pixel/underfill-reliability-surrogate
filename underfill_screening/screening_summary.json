@@ -1,0 +1,214 @@
+{
+  "geometry_status": "fixed to dimensions measured from the competition STEP",
+  "boundary_condition": "Rigid Motion Suppression; free thermo-mechanical warpage",
+  "damage_metric": "max over 25/-40/125 C states of the official corner-ball volume-average von Mises stress",
+  "reference_case": "official nominal Epoxy A",
+  "coarse_proxy_results": [
+    {
+      "case_id": "al_006_01_B",
+      "variant": "B",
+      "elastic_scale": 0.7573613597080111,
+      "cte_scale": 0.6057611722499132,
+      "tg_shift_c": -1.2115760892629623,
+      "elastic_gpa": 5.3015295179560775,
+      "cte_below_tg_ppm_k": 19.384357511997223,
+      "tg_c": 143.78842391073704,
+      "damage_mpa": 13.224160855196288,
+      "damage_ratio_vs_A": 0.13708818690537916,
+      "reduction_vs_A_percent": 86.29118130946209,
+      "source": "Gaussian-process active-learning proposal"
+    },
+    {
+      "case_id": "al_006_02_B",
+      "variant": "B",
+      "elastic_scale": 0.9144715964794159,
+      "cte_scale": 0.6058767676353455,
+      "tg_shift_c": -3.804761879146099,
+      "elastic_gpa": 6.401301175355911,
+      "cte_below_tg_ppm_k": 19.388056564331055,
+      "tg_c": 141.1952381208539,
+      "damage_mpa": 14.319890358333861,
+      "damage_ratio_vs_A": 0.14844706045271944,
+      "reduction_vs_A_percent": 85.15529395472805,
+      "source": "Gaussian-process active-learning proposal"
+    },
+    {
+      "case_id": "lhs_04_B",
+      "variant": "B",
+      "elastic_scale": 1.043199253928194,
+      "cte_scale": 0.7516518899918805,
+      "tg_shift_c": 12.700374598656804,
+      "elastic_gpa": 7.3023947774973585,
+      "cte_below_tg_ppm_k": 24.052860479740175,
+      "tg_c": 157.7003745986568,
+      "damage_mpa": 25.4602328334865,
+      "damage_ratio_vs_A": 0.2639333561917462,
+      "reduction_vs_A_percent": 73.60666438082538,
+      "source": "screening DOE; bounds require supplier-property confirmation"
+    },
+    {
+      "case_id": "lhs_03_B",
+      "variant": "B",
+      "elastic_scale": 0.8416499571453737,
+      "cte_scale": 0.8911323404088476,
+      "tg_shift_c": -1.63196200671283,
+      "elastic_gpa": 5.891549700017616,
+      "cte_below_tg_ppm_k": 28.516234893083123,
+      "tg_c": 143.36803799328717,
+      "damage_mpa": 32.747593228963474,
+      "damage_ratio_vs_A": 0.33947773551994037,
+      "reduction_vs_A_percent": 66.05222644800597,
+      "source": "screening DOE; bounds require supplier-property confirmation"
+    },
+    {
+      "case_id": "nominal_B",
+      "variant": "B",
+      "elastic_scale": 1.0,
+      "cte_scale": 1.0,
+      "tg_shift_c": 0.0,
+      "elastic_gpa": 7.0,
+      "cte_below_tg_ppm_k": 32.0,
+      "tg_c": 145.0,
+      "damage_mpa": 42.78136525179154,
+      "damage_ratio_vs_A": 0.44349277507467527,
+      "reduction_vs_A_percent": 55.650722492532466,
+      "source": "official nominal alternative"
+    },
+    {
+      "case_id": "lhs_01_A",
+      "variant": "A",
+      "elastic_scale": 0.9609216019016997,
+      "cte_scale": 0.7180043417142423,
+      "tg_shift_c": 1.3318289971412867,
+      "elastic_gpa": 9.609216019016998,
+      "cte_below_tg_ppm_k": 17.232104201141816,
+      "tg_c": 111.33182899714129,
+      "damage_mpa": 58.8536849745063,
+      "damage_ratio_vs_A": 0.6101063843824266,
+      "reduction_vs_A_percent": 38.98936156175734,
+      "source": "screening DOE; bounds require supplier-property confirmation"
+    },
+    {
+      "case_id": "lhs_02_A",
+      "variant": "A",
+      "elastic_scale": 0.996290601939023,
+      "cte_scale": 0.9322541332845174,
+      "tg_shift_c": 8.023704385366837,
+      "elastic_gpa": 9.96290601939023,
+      "cte_below_tg_ppm_k": 22.374099198828418,
+      "tg_c": 118.02370438536684,
+      "damage_mpa": 87.44719616226371,
+      "damage_ratio_vs_A": 0.9065208524844296,
+      "reduction_vs_A_percent": 9.34791475155704,
+      "source": "screening DOE; bounds require supplier-property confirmation"
+    },
+    {
+      "case_id": "reference_A",
+      "variant": "A",
+      "elastic_scale": 1.0,
+      "cte_scale": 1.0,
+      "tg_shift_c": 0.0,
+      "elastic_gpa": 10.0,
+      "cte_below_tg_ppm_k": 24.0,
+      "tg_c": 110.0,
+      "damage_mpa": 96.46462728640398,
+      "damage_ratio_vs_A": 1.0,
+      "reduction_vs_A_percent": 0.0,
+      "source": "official nominal reference"
+    }
+  ],
+  "mathematical_best_screened_candidate": {
+    "case_id": "al_006_01_B",
+    "variant": "B",
+    "elastic_scale": 0.7573613597080111,
+    "cte_scale": 0.6057611722499132,
+    "tg_shift_c": -1.2115760892629623,
+    "elastic_gpa": 5.3015295179560775,
+    "cte_below_tg_ppm_k": 19.384357511997223,
+    "tg_c": 143.78842391073704,
+    "damage_mpa": 13.224160855196288,
+    "damage_ratio_vs_A": 0.13708818690537916,
+    "reduction_vs_A_percent": 86.29118130946209,
+    "source": "Gaussian-process active-learning proposal"
+  },
+  "less_aggressive_screened_candidate": {
+    "case_id": "lhs_04_B",
+    "variant": "B",
+    "elastic_scale": 1.043199253928194,
+    "cte_scale": 0.7516518899918805,
+    "tg_shift_c": 12.700374598656804,
+    "elastic_gpa": 7.3023947774973585,
+    "cte_below_tg_ppm_k": 24.052860479740175,
+    "tg_c": 157.7003745986568,
+    "damage_mpa": 25.4602328334865,
+    "damage_ratio_vs_A": 0.2639333561917462,
+    "reduction_vs_A_percent": 73.60666438082538,
+    "source": "screening DOE; bounds require supplier-property confirmation"
+  },
+  "mesh_validation": {
+    "reference_A": {
+      "coarse_damage_mpa": 96.46462728640398,
+      "medium_damage_mpa": 96.34207181219367,
+      "relative_change_percent": -0.12704706135074162
+    },
+    "al_006_01_B": {
+      "coarse_damage_mpa": 13.224160855196288,
+      "medium_damage_mpa": 13.209563005269967,
+      "relative_change_percent": -0.11038772203519268
+    },
+    "medium_ratio_best_vs_A": 0.1371110539434972
+  },
+  "uncalibrated_2x_screening": {
+    "exponent": 1.96,
+    "damage_ratio_threshold": 0.7021231094858295,
+    "warning": "The exponent is not a calibrated SAC305 life model for this assembly. It is included only as a screening threshold, not a qualified life claim."
+  },
+  "anand_status": {
+    "full_25_ball_fixed_bottom": "failed local-variable convergence",
+    "full_25_ball_rigid_motion": "computationally impractical for batch screening",
+    "corner_2x2_batch": "advanced to 79 percent and was saved; stopped only because TU Delft license connectivity was lost",
+    "partial_model": "E:\\COMSEL\\official_compliant_redesign_rms\\reference_A\\anand_c1\\coarse\\official_corner_reference_A_anand_coarse_batchsolved.mph"
+  },
+  "next_active_learning_candidates": [
+    {
+      "case_id": "al_008_01_B",
+      "variant": "B",
+      "elastic_scale": 0.752839582785964,
+      "cte_scale": 0.6011807400733232,
+      "tg_shift_c": 9.203157648444176,
+      "source": "Gaussian-process active-learning proposal",
+      "predicted_log_damage": 16.39762016413487,
+      "predicted_log_damage_std": 0.026438934537762828
+    },
+    {
+      "case_id": "al_008_02_B",
+      "variant": "B",
+      "elastic_scale": 0.7573879970703274,
+      "cte_scale": 0.6146799020469188,
+      "tg_shift_c": -2.820582836866379,
+      "source": "Gaussian-process active-learning proposal",
+      "predicted_log_damage": 16.423887463099422,
+      "predicted_log_damage_std": 0.00721275717834434
+    },
+    {
+      "case_id": "al_008_03_B",
+      "variant": "B",
+      "elastic_scale": 0.8034198283217847,
+      "cte_scale": 0.6104277979582547,
+      "tg_shift_c": 8.837264738976955,
+      "source": "Gaussian-process active-learning proposal",
+      "predicted_log_damage": 16.452859790602815,
+      "predicted_log_damage_std": 0.024918552858357774
+    },
+    {
+      "case_id": "al_008_04_B",
+      "variant": "B",
+      "elastic_scale": 0.7898540715221316,
+      "cte_scale": 0.6093671578913927,
+      "tg_shift_c": 2.158877905458212,
+      "source": "Gaussian-process active-learning proposal",
+      "predicted_log_damage": 16.43122000513539,
+      "predicted_log_damage_std": 0.008750339626354036
+    }
+  ]
+}

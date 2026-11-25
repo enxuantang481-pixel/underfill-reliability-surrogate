@@ -1,0 +1,58 @@
+{
+  "metric": "cycle-wise increment of corner-ball volume-average solid.evpe",
+  "interpretation": "Inverse damage factor is a relative strain-accumulation indicator, not a calibrated fatigue-life multiplier.",
+  "fr4_model": "Competition orthotropic E, Poisson ratios and CTE; shear moduli derived from E and nu.",
+  "results": {
+    "reference_A": {
+      "field_expression": "solid.evpe",
+      "cycle_delta_evpe": [
+        0.017812319795827963,
+        0.01619830559653111,
+        0.01615165677559053
+      ],
+      "successive_cycle_ratio": [
+        0.909387759831547,
+        0.9971201419393786
+      ],
+      "final_time_s": 10650.0,
+      "saved_time_count": 66,
+      "model": "E:\\COMSEL\\official_compliant_redesign_ortho\\reference_A\\anand_c3\\coarse\\reference_A_anand_c3_coarse_ortho_dt15_solved.mph"
+    },
+    "nominal_B": {
+      "field_expression": "solid.evpe",
+      "cycle_delta_evpe": [
+        0.00526843846200486,
+        0.0038614288832239272,
+        0.0036972718364775316
+      ],
+      "successive_cycle_ratio": [
+        0.7329361272931131,
+        0.9574880046452287
+      ],
+      "final_time_s": 10650.0,
+      "saved_time_count": 66,
+      "model": "E:\\COMSEL\\official_compliant_redesign_ortho\\nominal_B\\anand_c3\\coarse\\nominal_B_anand_c3_coarse_ortho_dt15_solved.mph"
+    }
+  },
+  "comparisons": [
+    {
+      "cycle": 1,
+      "damage_ratio_B_to_A": 0.29577497610607933,
+      "evpe_reduction_percent": 70.42250238939206,
+      "inverse_damage_factor": 3.3809486291407937
+    },
+    {
+      "cycle": 2,
+      "damage_ratio_B_to_A": 0.23838474093554932,
+      "evpe_reduction_percent": 76.16152590644506,
+      "inverse_damage_factor": 4.194899371811571
+    },
+    {
+      "cycle": 3,
+      "damage_ratio_B_to_A": 0.22890975754667456,
+      "evpe_reduction_percent": 77.10902424533255,
+      "inverse_damage_factor": 4.368533743242031
+    }
+  ],
+  "minimum_inverse_damage_factor": 3.3809486291407937
+}

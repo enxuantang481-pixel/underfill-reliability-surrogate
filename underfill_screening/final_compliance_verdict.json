@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "recommended_design": "competition nominal Epoxy B",
+  "reference_design": "competition nominal Epoxy A",
+  "claim_metric": "inverse ratio of cycle-wise critical-joint volume-average equivalent viscoplastic strain increment",
+  "minimum_three_cycle_inverse_damage_factor": 3.3809486291407937,
+  "full_25_joint_cycle_1_inverse_damage_factor": 3.387561066604089,
+  "full_25_joint_cycle_1_evpe_reduction_percent": 70.4802369510503,
+  "mesh_factor_change_percent": 0.3094245679836405,
+  "checks": {
+    "minimum_three_cycle_factor_exceeds_2x": true,
+    "full_25_joint_anand_factor_exceeds_2x": true,
+    "anand_active_in_all_25_joint_check": true,
+    "outer_corner_is_critical": true,
+    "fixed_parameters_identical_A_B": true,
+    "fixed_domain_selections_identical_A_B": true,
+    "three_cycle_models_complete": true,
+    "mesh_factor_change_below_1_percent": true
+  },
+  "claim_boundary": "Relative EVPE damage-indicator improvement, not calibrated cycles-to-failure."
+}

@@ -1,0 +1,514 @@
+{
+  "checks": {
+    "fixed_parameters_identical_A_B": true,
+    "fixed_domain_selections_identical_A_B": true,
+    "both_complete_to_10650_s": true,
+    "corner_joint_ranked_first_in_both": true
+  },
+  "results": {
+    "reference_A": {
+      "model": "E:\\COMSEL\\official_compliant_redesign_ortho\\reference_A\\anand_c3\\coarse\\reference_A_anand_c3_coarse_ortho_dt15_solved.mph",
+      "final_time_s": 10650.0,
+      "saved_time_count": 66,
+      "fixed_parameters": {
+        "patch_min": "-6.591999999999999[mm]",
+        "patch_max": "4.5[mm]",
+        "patch_size": "patch_max-patch_min",
+        "pitch": "1.0[mm]",
+        "solder_r": "0.3[mm]",
+        "solder_h": "0.4[mm]",
+        "pad_r": "0.225[mm]",
+        "pad_t": "0.03[mm]",
+        "gap_h": "2*pad_t+solder_h",
+        "pcb_t": "1.51[mm]",
+        "sub_t": "1.09[mm]",
+        "corner_DNP": "17.67766952966369[mm]",
+        "rho_sac305": "7400[kg/m^3]",
+        "E_sac305": "51[GPa]",
+        "nu_sac305": "0.40",
+        "alpha_sac305": "22.2e-6[1/K]",
+        "anand_s0": "21[MPa]",
+        "anand_Q": "9320[K]*8.314[J/(mol*K)]",
+        "anand_A": "3501[1/s]",
+        "anand_xi": "4.0",
+        "anand_m": "0.25",
+        "anand_h0": "180000[MPa]",
+        "anand_shat": "30.2[MPa]",
+        "anand_n": "0.01",
+        "anand_a": "1.78",
+        "E_fr4a_xy": "20[GPa]",
+        "E_fr4a_z": "15[GPa]",
+        "nu_fr4a_xy": "0.10",
+        "nu_fr4a_xz": "0.14",
+        "G_fr4a_xy": "E_fr4a_xy/(2*(1+nu_fr4a_xy))",
+        "G_fr4a_xz": "E_fr4a_z/(2*(1+nu_fr4a_xz))",
+        "alpha_fr4a_xy": "16e-6[1/K]",
+        "alpha_fr4a_z": "82e-6[1/K]",
+        "E_fr4b_xy": "18[GPa]",
+        "E_fr4b_z": "14[GPa]",
+        "nu_fr4b_xy": "0.10",
+        "nu_fr4b_xz": "0.14",
+        "G_fr4b_xy": "E_fr4b_xy/(2*(1+nu_fr4b_xy))",
+        "G_fr4b_xz": "E_fr4b_z/(2*(1+nu_fr4b_xz))",
+        "alpha_fr4b_xy": "11e-6[1/K]",
+        "alpha_fr4b_z": "70e-6[1/K]"
+      },
+      "underfill_parameters": {
+        "rho_uf": "1550[kg/m^3]",
+        "E_uf": "1.0*10[GPa]",
+        "nu_uf": "0.36",
+        "alpha_uf_below": "1.0*24e-6[1/K]",
+        "alpha_jump": "2.5",
+        "Tg_uf": "(110+0.0)[degC]",
+        "T_smooth": "2[K]",
+        "alpha_uf": "alpha_uf_below*(1+(alpha_jump-1)*theta_Tg)"
+      },
+      "domain_selections": {
+        "sel_pcb": [
+          1
+        ],
+        "sel_substrate": [
+          3
+        ],
+        "sel_pads": [
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78
+        ],
+        "sel_solder": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          19,
+          20,
+          21,
+          22,
+          23,
+          34,
+          35,
+          36,
+          37,
+          38,
+          49,
+          50,
+          51,
+          52,
+          53,
+          64,
+          65,
+          66,
+          67,
+          68
+        ],
+        "sel_underfill": [
+          2
+        ],
+        "sel_anand_zone": [
+          4,
+          5,
+          19,
+          20
+        ]
+      },
+      "physics": {
+        "solid_feature_tags": [
+          "lemm1",
+          "free1",
+          "init1",
+          "dcont1",
+          "dcnt1",
+          "dgcnt1",
+          "rms1",
+          "lemm_pcb",
+          "lemm_substrate"
+        ],
+        "default_elastic_subfeatures": [
+          "te1",
+          "vp1"
+        ],
+        "anand": {
+          "model": "Anand",
+          "selected_domains": [
+            4,
+            5,
+            19,
+            20
+          ],
+          "temperature": "Tblr(t)"
+        },
+        "pcb_orthotropic": {
+          "selected_domains": [
+            1
+          ],
+          "solid_model": "Orthotropic",
+          "Evector": "E_fr4a_xy",
+          "nuvector": "nu_fr4a_xy",
+          "Gvector": "G_fr4a_xy"
+        },
+        "substrate_orthotropic": {
+          "selected_domains": [
+            3
+          ],
+          "solid_model": "Orthotropic",
+          "Evector": "E_fr4b_xy",
+          "nuvector": "nu_fr4b_xy",
+          "Gvector": "G_fr4b_xy"
+        },
+        "rigid_motion_suppression": true
+      },
+      "solver": {
+        "relative_tolerance": "0.02",
+        "maximum_order": "2",
+        "initial_step": "0.1[s]",
+        "maximum_step": "15[s]",
+        "fully_coupled_max_iterations": "30",
+        "linear_solver": "pardiso"
+      },
+      "critical_joint_ranking": [
+        "(0,0)",
+        "(0,1)",
+        "(1,0)",
+        "(1,1)"
+      ],
+      "joints": [
+        {
+          "joint": "(0,0)",
+          "dnp_mm": 17.67766952966369,
+          "cycle_delta_evpe": [
+            0.017812319795827963,
+            0.01619830559653111,
+            0.01615165677559053
+          ]
+        },
+        {
+          "joint": "(0,1)",
+          "dnp_mm": 16.98528775146303,
+          "cycle_delta_evpe": [
+            0.01750558696345727,
+            0.015896520805943712,
+            0.015848219004899376
+          ]
+        },
+        {
+          "joint": "(1,0)",
+          "dnp_mm": 16.98528775146303,
+          "cycle_delta_evpe": [
+            0.017500885783918164,
+            0.01589460954415074,
+            0.015846049733363718
+          ]
+        },
+        {
+          "joint": "(1,1)",
+          "dnp_mm": 16.263455967290593,
+          "cycle_delta_evpe": [
+            0.017155918828139636,
+            0.01555426541274155,
+            0.015503802007244695
+          ]
+        }
+      ]
+    },
+    "nominal_B": {
+      "model": "E:\\COMSEL\\official_compliant_redesign_ortho\\nominal_B\\anand_c3\\coarse\\nominal_B_anand_c3_coarse_ortho_dt15_solved.mph",
+      "final_time_s": 10650.0,
+      "saved_time_count": 66,
+      "fixed_parameters": {
+        "patch_min": "-6.591999999999999[mm]",
+        "patch_max": "4.5[mm]",
+        "patch_size": "patch_max-patch_min",
+        "pitch": "1.0[mm]",
+        "solder_r": "0.3[mm]",
+        "solder_h": "0.4[mm]",
+        "pad_r": "0.225[mm]",
+        "pad_t": "0.03[mm]",
+        "gap_h": "2*pad_t+solder_h",
+        "pcb_t": "1.51[mm]",
+        "sub_t": "1.09[mm]",
+        "corner_DNP": "17.67766952966369[mm]",
+        "rho_sac305": "7400[kg/m^3]",
+        "E_sac305": "51[GPa]",
+        "nu_sac305": "0.40",
+        "alpha_sac305": "22.2e-6[1/K]",
+        "anand_s0": "21[MPa]",
+        "anand_Q": "9320[K]*8.314[J/(mol*K)]",
+        "anand_A": "3501[1/s]",
+        "anand_xi": "4.0",
+        "anand_m": "0.25",
+        "anand_h0": "180000[MPa]",
+        "anand_shat": "30.2[MPa]",
+        "anand_n": "0.01",
+        "anand_a": "1.78",
+        "E_fr4a_xy": "20[GPa]",
+        "E_fr4a_z": "15[GPa]",
+        "nu_fr4a_xy": "0.10",
+        "nu_fr4a_xz": "0.14",
+        "G_fr4a_xy": "E_fr4a_xy/(2*(1+nu_fr4a_xy))",
+        "G_fr4a_xz": "E_fr4a_z/(2*(1+nu_fr4a_xz))",
+        "alpha_fr4a_xy": "16e-6[1/K]",
+        "alpha_fr4a_z": "82e-6[1/K]",
+        "E_fr4b_xy": "18[GPa]",
+        "E_fr4b_z": "14[GPa]",
+        "nu_fr4b_xy": "0.10",
+        "nu_fr4b_xz": "0.14",
+        "G_fr4b_xy": "E_fr4b_xy/(2*(1+nu_fr4b_xy))",
+        "G_fr4b_xz": "E_fr4b_z/(2*(1+nu_fr4b_xz))",
+        "alpha_fr4b_xy": "11e-6[1/K]",
+        "alpha_fr4b_z": "70e-6[1/K]"
+      },
+      "underfill_parameters": {
+        "rho_uf": "1850[kg/m^3]",
+        "E_uf": "1.0*7[GPa]",
+        "nu_uf": "0.34",
+        "alpha_uf_below": "1.0*32e-6[1/K]",
+        "alpha_jump": "2.5",
+        "Tg_uf": "(145+0.0)[degC]",
+        "T_smooth": "2[K]",
+        "alpha_uf": "alpha_uf_below*(1+(alpha_jump-1)*theta_Tg)"
+      },
+      "domain_selections": {
+        "sel_pcb": [
+          1
+        ],
+        "sel_substrate": [
+          3
+        ],
+        "sel_pads": [
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78
+        ],
+        "sel_solder": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          19,
+          20,
+          21,
+          22,
+          23,
+          34,
+          35,
+          36,
+          37,
+          38,
+          49,
+          50,
+          51,
+          52,
+          53,
+          64,
+          65,
+          66,
+          67,
+          68
+        ],
+        "sel_underfill": [
+          2
+        ],
+        "sel_anand_zone": [
+          4,
+          5,
+          19,
+          20
+        ]
+      },
+      "physics": {
+        "solid_feature_tags": [
+          "lemm1",
+          "free1",
+          "init1",
+          "dcont1",
+          "dcnt1",
+          "dgcnt1",
+          "rms1",
+          "lemm_pcb",
+          "lemm_substrate"
+        ],
+        "default_elastic_subfeatures": [
+          "te1",
+          "vp1"
+        ],
+        "anand": {
+          "model": "Anand",
+          "selected_domains": [
+            4,
+            5,
+            19,
+            20
+          ],
+          "temperature": "Tblr(t)"
+        },
+        "pcb_orthotropic": {
+          "selected_domains": [
+            1
+          ],
+          "solid_model": "Orthotropic",
+          "Evector": "E_fr4a_xy",
+          "nuvector": "nu_fr4a_xy",
+          "Gvector": "G_fr4a_xy"
+        },
+        "substrate_orthotropic": {
+          "selected_domains": [
+            3
+          ],
+          "solid_model": "Orthotropic",
+          "Evector": "E_fr4b_xy",
+          "nuvector": "nu_fr4b_xy",
+          "Gvector": "G_fr4b_xy"
+        },
+        "rigid_motion_suppression": true
+      },
+      "solver": {
+        "relative_tolerance": "0.02",
+        "maximum_order": "2",
+        "initial_step": "0.1[s]",
+        "maximum_step": "15[s]",
+        "fully_coupled_max_iterations": "30",
+        "linear_solver": "pardiso"
+      },
+      "critical_joint_ranking": [
+        "(0,0)",
+        "(1,0)",
+        "(0,1)",
+        "(1,1)"
+      ],
+      "joints": [
+        {
+          "joint": "(0,0)",
+          "dnp_mm": 17.67766952966369,
+          "cycle_delta_evpe": [
+            0.00526843846200486,
+            0.0038614288832239272,
+            0.0036972718364775316
+          ]
+        },
+        {
+          "joint": "(0,1)",
+          "dnp_mm": 16.98528775146303,
+          "cycle_delta_evpe": [
+            0.00518575501319233,
+            0.0037638513126472843,
+            0.003600411106234023
+          ]
+        },
+        {
+          "joint": "(1,0)",
+          "dnp_mm": 16.98528775146303,
+          "cycle_delta_evpe": [
+            0.005187372923983451,
+            0.003769276723640585,
+            0.0036058465150489057
+          ]
+        },
+        {
+          "joint": "(1,1)",
+          "dnp_mm": 16.263455967290593,
+          "cycle_delta_evpe": [
+            0.005091296201905744,
+            0.003656316812226134,
+            0.003493601445675211
+          ]
+        }
+      ]
+    }
+  }
+}

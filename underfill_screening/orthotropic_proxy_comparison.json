@@ -1,0 +1,224 @@
+{
+  "metric": "max of volume-average corner-joint solid.mises at 25/-40/125 degC",
+  "results": {
+    "reference_A": {
+      "corner_metric_pa": 91036591.35822755,
+      "corner_rank": 1,
+      "ranked_joints": [
+        {
+          "joint": "(0,0)",
+          "max_mises_pa": 91036591.35822755
+        },
+        {
+          "joint": "(1,0)",
+          "max_mises_pa": 90063222.07555676
+        },
+        {
+          "joint": "(0,1)",
+          "max_mises_pa": 89971948.08902897
+        },
+        {
+          "joint": "(1,1)",
+          "max_mises_pa": 88870234.20905414
+        },
+        {
+          "joint": "(0,2)",
+          "max_mises_pa": 88731209.10376333
+        },
+        {
+          "joint": "(2,0)",
+          "max_mises_pa": 88701011.10205206
+        },
+        {
+          "joint": "(1,2)",
+          "max_mises_pa": 87678568.69521056
+        },
+        {
+          "joint": "(2,1)",
+          "max_mises_pa": 87558191.86363758
+        },
+        {
+          "joint": "(2,2)",
+          "max_mises_pa": 86526465.79153024
+        },
+        {
+          "joint": "(3,0)",
+          "max_mises_pa": 83738748.27343294
+        },
+        {
+          "joint": "(0,3)",
+          "max_mises_pa": 83609288.95532584
+        },
+        {
+          "joint": "(1,3)",
+          "max_mises_pa": 82850461.00144541
+        },
+        {
+          "joint": "(3,1)",
+          "max_mises_pa": 82645908.28451383
+        },
+        {
+          "joint": "(2,3)",
+          "max_mises_pa": 81755509.79815517
+        },
+        {
+          "joint": "(3,2)",
+          "max_mises_pa": 81617112.33507828
+        },
+        {
+          "joint": "(3,3)",
+          "max_mises_pa": 77320095.21402735
+        },
+        {
+          "joint": "(0,4)",
+          "max_mises_pa": 71604481.73572549
+        },
+        {
+          "joint": "(4,0)",
+          "max_mises_pa": 71437249.15507407
+        },
+        {
+          "joint": "(4,1)",
+          "max_mises_pa": 70474190.87908022
+        },
+        {
+          "joint": "(1,4)",
+          "max_mises_pa": 70473543.07700011
+        },
+        {
+          "joint": "(4,2)",
+          "max_mises_pa": 69610541.0990574
+        },
+        {
+          "joint": "(2,4)",
+          "max_mises_pa": 69570694.79386553
+        },
+        {
+          "joint": "(4,3)",
+          "max_mises_pa": 65378317.16382444
+        },
+        {
+          "joint": "(3,4)",
+          "max_mises_pa": 65329340.73944755
+        },
+        {
+          "joint": "(4,4)",
+          "max_mises_pa": 54521115.63988538
+        }
+      ],
+      "model": "E:\\COMSEL\\official_compliant_redesign_ortho\\reference_A\\proxy\\coarse\\reference_A_proxy_coarse_ortho_solved.mph"
+    },
+    "nominal_B": {
+      "corner_metric_pa": 41246671.373342104,
+      "corner_rank": 1,
+      "ranked_joints": [
+        {
+          "joint": "(0,0)",
+          "max_mises_pa": 41246671.373342104
+        },
+        {
+          "joint": "(1,0)",
+          "max_mises_pa": 40960590.251241915
+        },
+        {
+          "joint": "(0,1)",
+          "max_mises_pa": 40929961.350518495
+        },
+        {
+          "joint": "(1,1)",
+          "max_mises_pa": 40592059.87010364
+        },
+        {
+          "joint": "(0,2)",
+          "max_mises_pa": 40374379.69308342
+        },
+        {
+          "joint": "(2,0)",
+          "max_mises_pa": 40359701.3872182
+        },
+        {
+          "joint": "(1,2)",
+          "max_mises_pa": 40056889.18977709
+        },
+        {
+          "joint": "(2,1)",
+          "max_mises_pa": 40009372.82340675
+        },
+        {
+          "joint": "(2,2)",
+          "max_mises_pa": 39522893.454151675
+        },
+        {
+          "joint": "(3,0)",
+          "max_mises_pa": 38255566.48430029
+        },
+        {
+          "joint": "(0,3)",
+          "max_mises_pa": 38211540.04399202
+        },
+        {
+          "joint": "(1,3)",
+          "max_mises_pa": 37973127.97860246
+        },
+        {
+          "joint": "(3,1)",
+          "max_mises_pa": 37894431.16821911
+        },
+        {
+          "joint": "(2,3)",
+          "max_mises_pa": 37468163.629362315
+        },
+        {
+          "joint": "(3,2)",
+          "max_mises_pa": 37420787.787043616
+        },
+        {
+          "joint": "(3,3)",
+          "max_mises_pa": 35575520.23812151
+        },
+        {
+          "joint": "(0,4)",
+          "max_mises_pa": 33775162.96498925
+        },
+        {
+          "joint": "(4,0)",
+          "max_mises_pa": 33711393.19800158
+        },
+        {
+          "joint": "(4,1)",
+          "max_mises_pa": 33436625.222659465
+        },
+        {
+          "joint": "(1,4)",
+          "max_mises_pa": 33420691.17769141
+        },
+        {
+          "joint": "(4,2)",
+          "max_mises_pa": 33058312.8049997
+        },
+        {
+          "joint": "(2,4)",
+          "max_mises_pa": 33027718.564516876
+        },
+        {
+          "joint": "(4,3)",
+          "max_mises_pa": 31249934.96705031
+        },
+        {
+          "joint": "(3,4)",
+          "max_mises_pa": 31225175.816526435
+        },
+        {
+          "joint": "(4,4)",
+          "max_mises_pa": 27196108.708433457
+        }
+      ],
+      "model": "E:\\COMSEL\\official_compliant_redesign_ortho\\nominal_B\\proxy\\coarse\\nominal_B_proxy_coarse_ortho_solved.mph"
+    }
+  },
+  "comparison": {
+    "damage_ratio_B_to_A": 0.45307794105599913,
+    "reduction_percent": 54.69220589440009,
+    "inverse_proxy_factor": 2.2071257710522767
+  }
+}

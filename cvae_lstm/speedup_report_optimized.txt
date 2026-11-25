@@ -1,0 +1,5 @@
+Optimized Benchmarking Results (v1.2)
+Technique: Vectorized Batch Decoding
+FiPy CPU Solver Time: 14.9793 s
+AI GPU Inference Time: 0.4676 s
+Speedup: 32.03x

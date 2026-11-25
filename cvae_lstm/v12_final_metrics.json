@@ -1,0 +1,12 @@
+{
+  "cvae_best_ssim": 0.9769,
+  "lstm_final_loss": 0.0028,
+  "latent_dim": 512,
+  "architecture": "Residual-CVAE",
+  "loss_functions": [
+    "MSE",
+    "SSIM",
+    "Laplace",
+    "KL"
+  ]
+}
