@@ -25,7 +25,7 @@ The load is the −40 to 125 °C thermal cycle. Epoxy A passes its glass transit
 
 ![Thermal cycle and underfill glass-transition temperatures](docs/thermal_cycle_tg.png)
 
-`underfill_screening/comsol/` has the two COMSOL Java API scripts used to import the STEP file and measure its bounding boxes.
+The STEP file is in `underfill_screening/geometry/estc2026_model_solder.stp`. It was provided by the ESTC 2026 Student Competition organizers and remains theirs; it is included here only so the study can be followed. `underfill_screening/comsol/` has the two COMSOL Java API scripts used to import it and measure its bounding boxes.
 
 ## Results
 
@@ -71,4 +71,4 @@ Entry point: `run_pipeline.py`. Needs COMSOL Multiphysics with the `mph` Python 
 
 ## Not included
 
-Training data, model weights, COMSOL model files and the competition geometry are not in the repository. The module `comsol_corner_model.py`, which builds the COMSOL model and is imported by the screening scripts, is also missing from this snapshot, so those scripts document the method but do not run as-is.
+Training data, model weights and COMSOL model files are not in the repository. The module `comsol_corner_model.py`, which builds the COMSOL model and is imported by the screening scripts, is also missing from this snapshot, so those scripts document the method but do not run as-is.
