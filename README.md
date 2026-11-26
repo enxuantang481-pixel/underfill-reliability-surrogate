@@ -9,6 +9,24 @@ Surrogate models for solder-joint reliability in electronic packaging, in two pa
 
 The IEEE ESTC 2026 Student Competition ("Predictive Modeling and Design Optimization for Advanced Electronic Packaging") posed an automotive reliability case: model a BGA package on a PCB under −40 to 125 °C thermal cycling, find the critical solder joints, and identify an underfill choice that improves reliability by at least 2×, without changing the geometry or the solder. This entry was selected as one of 7 finalists worldwide and presented at the 11th ESTC conference in Helsinki, September 2026.
 
+## Geometry and model
+
+The competition supplied the package as a STEP file: a BGA component on a 100 × 100 mm PCB with 543 solder joints at 1.00 mm pitch. Imported into COMSOL it looks like this:
+
+![Competition assembly imported into COMSOL](docs/geometry_full_assembly.png)
+
+Solving all 543 joints with a viscoplastic solder model is too slow for screening, so the study uses a 5 × 5 corner submodel around the joint farthest from the package centre (17.68 mm), which sees the largest thermal mismatch.
+
+| Corner submodel | Mesh preview from model development |
+|---|---|
+| ![5 × 5 corner submodel](docs/corner_submodel_schematic.png) | ![Mesh of the 5 × 5 submodel](docs/mesh_corner_submodel.jpg) |
+
+The load is the −40 to 125 °C thermal cycle. Epoxy A passes its glass transition (110 °C) during the hot dwell and softens; Epoxy B (145 °C) does not.
+
+![Thermal cycle and underfill glass-transition temperatures](docs/thermal_cycle_tg.png)
+
+`underfill_screening/comsol/` has the two COMSOL Java API scripts used to import the STEP file and measure its bounding boxes.
+
 ## Results
 
 **CVAE-LSTM surrogate**
